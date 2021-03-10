@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## This website can be accessed from this link
-snepy-5759d.web.app
+[Snepy Web](snepy-5759d.web.app)
 
 ## Available Scripts
 
