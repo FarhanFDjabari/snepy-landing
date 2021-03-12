@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -68,29 +67,11 @@ const NavImg = styled.img`
 `;
 
 function Header() {
-  const [navBg, setNavBg] = useState(false);
-  const navRef = useRef();
-  navRef.current = navBg;
-  useEffect(() => {
-    const handleScroll = () => {
-      const show = window.scrollY > 50;
-      if (navRef.current !== show) {
-        setNavBg(show);
-      }
-    };
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <NavWrapper
       expand="lg"
       style={{
-        backgroundColor: navBg
-          ? "rgba(255,255,255, 1)"
-          : "rgba(255,255,255, 0)",
+        backgroundColor: "rgba(255,255,255, 0)",
         transition: "0.3s ease",
       }}
     >
