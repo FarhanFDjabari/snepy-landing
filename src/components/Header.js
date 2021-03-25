@@ -91,6 +91,7 @@ function Header() {
           <NavItem>Features</NavItem>
           <NavItem>Help Center</NavItem>
           <NavItem>Rental Location</NavItem>
+          <NavItem onClick={() => window.open('/img/snepy.apk')}>Download App</NavItem>
         </NavContainer>
         <ImgContainer>
           <HeaderBtn>Buy Snepy!</HeaderBtn>
