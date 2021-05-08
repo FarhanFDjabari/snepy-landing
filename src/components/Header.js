@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Nav, Navbar } from "react-bootstrap";
+import { firebaseAnalytics } from "../firebaseConfig";
 
 const NavWrapper = styled(Navbar)`
   position: static;
@@ -66,6 +67,11 @@ const NavImg = styled.img`
   }
 `;
 
+function downloadBtnHandler() {
+  firebaseAnalytics.logEvent("download_button_clicked");
+  window.open("/img/snepy.apk");
+}
+
 function Header() {
   return (
     <NavWrapper
@@ -91,7 +97,7 @@ function Header() {
           <NavItem>Features</NavItem>
           <NavItem>Help Center</NavItem>
           <NavItem>Rental Location</NavItem>
-          <NavItem onClick={() => window.open('/img/snepy.apk')}>Download App</NavItem>
+          <NavItem onClick={downloadBtnHandler}>Download App</NavItem>
         </NavContainer>
         <ImgContainer>
           <HeaderBtn>Buy Snepy!</HeaderBtn>
