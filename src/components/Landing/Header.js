@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Nav, Navbar } from "react-bootstrap";
-import { firebaseAnalytics } from "../firebaseConfig";
+import { firebaseAnalytics } from "../../firebaseConfig";
 
 const NavWrapper = styled(Navbar)`
   position: static;

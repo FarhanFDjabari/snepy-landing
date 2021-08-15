@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import Box from "../components/Box";
-import CallToAction from "../components/CallToAction";
-import Description from "../components/Description";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Box from "../components/Landing/Box";
+import CallToAction from "../components/Landing/CallToAction";
+import Description from "../components/Landing/Description";
+import Footer from "../components/Landing/Footer";
+import Header from "../components/Landing/Header";
+import Video from '../components/Landing/Video'
 import { firebaseAnalytics } from "../firebaseConfig";
 
 function Landing() {
@@ -18,6 +19,7 @@ function Landing() {
       <Description />
       <CallToAction />
       <Footer />
+      <Video />
     </div>
   );
 }
