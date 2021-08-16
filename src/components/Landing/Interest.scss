@@ -52,3 +52,54 @@
   width: 100%;
   background-color: #cbe2ef;
 }
+
+.interest-form-email {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.input-email {
+  width: 435px;
+  height: 49px;
+  border: 2px solid white;
+  border-radius: 50px;
+  background: none;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-input-email {
+  width: 60%;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.form-input-email::placeholder {
+  color: black;
+}
+
+.btn-input-email {
+  width: 147px;
+  height: 33px;
+  border: none;
+  background: none;
+  outline: none;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.btn-input-email:active {
+  background-color: rgba(255, 255, 255, 0.836);
+}
+
+.input-email:focus {
+  outline: none;
+}

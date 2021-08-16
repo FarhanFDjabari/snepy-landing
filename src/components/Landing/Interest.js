@@ -15,15 +15,28 @@ const DescriptionText = styled.h3`
 `;
 
 const KotakProgress = styled.div`
-  width: 100%;
+  width: 516px;
   height: 20px;
-  border: 1px solid black;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 0;
+  margin: 0;
 `;
 
 const BesarProgress = styled.div`
   height: 100%;
-  background-color: black;
-  width: 20%;
+  width: 40%;
+  background-color: white;
+  border-radius: 50px;
+`
+
+const BesarProgressText = styled.p`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border: 2px solid black;
 `
 
 function Interest() {
@@ -43,9 +56,20 @@ function Interest() {
                     tempus.
                   </DescriptionText>
                 </div>
-                <KotakProgress>
-                  <BesarProgress />
-                </KotakProgress>
+                <div className="interest-form-email">
+                  <KotakProgress>
+                    <BesarProgress>
+                      <BesarProgressText>4 Orang</BesarProgressText>
+                    </BesarProgress>
+                  </KotakProgress>
+                  <p>Segera!
+                    <a href="google.com">Daftar email anda untuk masuk daftar antrian.</a>
+                  </p>
+                  <div className="input-email">
+                    <input className="form-input-email" type="text" placeholder="Email Anda" />
+                    <button className="btn-input-email">Daftarkan Dirimu!</button>
+                  </div>
+                </div>
               </Col>
               <Col className="interest-right">
                 <div class="photo"></div>

@@ -4,10 +4,17 @@ import React, { useEffect } from "react";
 // import Footer from "../components/Landing/Footer";
 import Header from "../components/Landing/Header";
 import Navbar from "../components/Landing/Navbar"
-import Video from '../components/Landing/Video'
+// import Video from '../components/Landing/Video'
 import Interest from '../components/Landing/Interest'
+import Inkubator from '../components/Landing/Inkubator'
+import News from '../components/Landing/News'
+import Video from '../components/Landing/Video'
 import { firebaseAnalytics } from "../firebaseConfig";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import 'react-slick/dist/react-slick.js'
+import 'react-slick/dist/react-slick.min.js'
 import "./LandingPage.scss"
 
 function Landing() {
@@ -17,12 +24,19 @@ function Landing() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <div className="">
         <Header />
-      </div>
-      <Video />
+      </div> */}
+      {/* <Video /> */}
       <Interest />
+      {/* <Inkubator />\
+      <div className="container" style={{backgroundColor:"black", padding:"20px", color: "white"}}>
+        <News />
+      </div>
+      <h1>Nofath</h1>
+      <h1>Nofath</h1>
+      <h1>Nofath</h1> */}
     </>
   );
 }
