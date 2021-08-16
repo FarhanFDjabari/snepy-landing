@@ -1,0 +1,30 @@
+.navbar {
+
+    &__brand-logo {
+        width: 44.54px;
+    }
+
+    &__bg-light {
+        background-color: #FAF9FE;
+        box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07);
+    }
+
+    &__item_text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #101E5A;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-brand.abs
+        {
+            position: absolute;
+            width: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+    }
+    
