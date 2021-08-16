@@ -4,7 +4,7 @@ import './Video.scss'
 
 function Video() {
   return(
-    <div class="video-wrapper">
+    <div className="video-wrapper">
       <iframe src="https://www.youtube.com/embed/9nQurjU-Ky0" allowfullscreen></iframe>
     </div>
   )

@@ -5,6 +5,7 @@ import React, { useEffect } from "react";
 import Header from "../components/Landing/Header";
 import Navbar from "../components/Landing/Navbar"
 import Video from '../components/Landing/Video'
+import Interest from '../components/Landing/Interest'
 import { firebaseAnalytics } from "../firebaseConfig";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./LandingPage.scss"
@@ -21,17 +22,8 @@ function Landing() {
         <Header />
       </div>
       <Video />
+      <Interest />
     </>
-    // <div>
-    //   <Navbar />
-    //   <Box />
-    //   <Header />
-    //   {/* <Box />
-    //   <Description />
-    //   <CallToAction />
-    //   <Footer /> */}
-    //   <Video />
-    // </div>
   );
 }
 
