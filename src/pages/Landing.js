@@ -5,6 +5,7 @@ import Description from "../components/Landing/Description";
 import Footer from "../components/Landing/Footer";
 import Header from "../components/Landing/Header";
 import Video from '../components/Landing/Video'
+import Interest from '../components/Landing/Interest'
 import { firebaseAnalytics } from "../firebaseConfig";
 
 function Landing() {
@@ -20,6 +21,7 @@ function Landing() {
       <CallToAction />
       <Footer />
       <Video />
+      <Interest />
     </div>
   );
 }
