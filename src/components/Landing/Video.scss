@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background: none;
 }
 
 .video-wrapper{
@@ -20,7 +20,7 @@
 .playpause {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(24, 25, 31, 0.5),rgba(24, 25, 31, 0.5));
+  background: rgba($color: #000000, $alpha: 0.25);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -41,6 +41,7 @@
   background: url("http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png");
   width: 50%;
   height: 50%;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;

@@ -39,37 +39,55 @@ export default class Responsive extends Component {
       ]
     };
     return (
-      <div>
-        <h2> Responsive </h2>
-        <Slider {...settings}>
-          <div>
-            <div className="box">
-              Nofath
-            </div>
+      <>
+        <h1>Berita Terbaru</h1>
+        <div className="news-container p-5">
+          <div className="container-fluid">
+            <Slider {...settings}>
+              <div className="px-3 d-flex justify-content-center align-items-center">
+                <div className="box">
+                  Nofath
+                </div>
+              </div>
+              <div className="px-3 d-flex justify-content-center align-items-center">
+                <div className="box">
+                  Nofath
+                </div>
+              </div>
+              <div className="px-3 d-flex justify-content-center align-items-center">
+                <div className="box">
+                  Nofath
+                </div>
+              </div>
+              <div className="px-3 d-flex justify-content-center align-items-center">
+                <div className="box">
+                  Nofath
+                </div>
+              </div>
+              <div className="px-3 d-flex justify-content-center align-items-center">
+                <div className="box">
+                  Nofath
+                </div>
+              </div>
+              <div className="px-3 d-flex justify-content-center align-items-center">
+                <div className="box">
+                  Nofath
+                </div>
+              </div>
+              <div className="px-3 d-flex justify-content-center align-items-center">
+                <div className="box">
+                  Nofath
+                </div>
+              </div>
+              <div className="px-3 d-flex justify-content-center align-items-center">
+                <div className="box">
+                  Nofath
+                </div>
+              </div>
+            </Slider>
           </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-          <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
-          </div>
-        </Slider>
-      </div>
+        </div>
+      </>
     );
   }
 }

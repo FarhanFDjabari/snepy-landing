@@ -10,6 +10,7 @@ import Interest from '../components/Landing/Interest'
 import Inkubator from '../components/Landing/Inkubator'
 import News from '../components/Landing/News'
 import Video from '../components/Landing/Video'
+import Footer from '../components/Landing/Footer'
 import { firebaseAnalytics } from "../firebaseConfig";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css"; 
@@ -25,21 +26,15 @@ function Landing() {
 
   return (
     <>
-      {/* <Navbar />
-      <div className="">
-        <Header />
-      </div>
+      <Navbar />
+      <Header />
       <Description />
       <Integration />
       <Video />
       <Interest />
-      {/* <Inkubator />\
-      <div className="container" style={{backgroundColor:"black", padding:"20px", color: "white"}}>
-        <News />
-      </div>
-      <h1>Nofath</h1>
-      <h1>Nofath</h1>
-      <h1>Nofath</h1> */}
+      <Inkubator />
+      <News />
+      <Footer />
     </>
   );
 }

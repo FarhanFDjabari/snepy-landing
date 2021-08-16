@@ -1,21 +1,30 @@
 import "./Interest.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
+import PhoneImg from '../../asset/img/Phone.png'
 
 const TitleText = styled.h1`
   font-size: 3.5rem;
   text-align: left;
   margin-bottom: 4rem;
+  
+  @media only screen and (max-width: 992px) {
+    text-align: center;
+  }
 `;
 
 const DescriptionText = styled.h3`
   font-size: 2rem;
   font-weight: 400;
   text-align: justify;
+
+  @media only screen and (max-width: 992px) {
+    text-align: center;
+  }
 `;
 
 const KotakProgress = styled.div`
-  width: 516px;
+  width: 100%;
   height: 20px;
   border: 2px solid white;
   border-radius: 50px;
@@ -44,8 +53,8 @@ function Interest() {
     <>
       <div class="interest-wrapper">
         <div class="interest-content">
-          <Container>
-            <Row>
+          <div className="container-fluid">
+            <Row className="bg-mobile px-5">
               <Col className="interest-left">
                 <div class="detail">
                   <TitleText>Tertarik dengan SNEPY?!</TitleText>
@@ -62,23 +71,23 @@ function Interest() {
                       <BesarProgressText>4 Orang</BesarProgressText>
                     </BesarProgress>
                   </KotakProgress>
-                  <p>Segera!
-                    <a href="google.com">Daftar email anda untuk masuk daftar antrian.</a>
-                  </p>
+                  <p>Segera!<a href="#"> Daftar email anda untuk masuk daftar antrian.</a></p>
                   <div className="input-email">
-                    <input className="form-input-email" type="text" placeholder="Email Anda" />
+                    {/* <input className="form-input-email" type="text" placeholder="Email Anda" /> */}
                     <button className="btn-input-email">Daftarkan Dirimu!</button>
                   </div>
                 </div>
               </Col>
               <Col className="interest-right">
-                <div class="photo"></div>
+                <div>
+                  <img src={PhoneImg} />
+                </div>
               </Col>
             </Row>
-          </Container>
+          </div>
         </div>
         <div class="interest-background">
-          <div class="blue-line"></div>
+          <div class="blue-line d-none d-lg-block"></div>
         </div>
       </div>
     </>
