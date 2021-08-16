@@ -1,0 +1,29 @@
+.integration-container {
+    margin-bottom: 40px;
+
+    .row-integration {
+        margin-top: 200px;
+    }
+
+    .container-image {
+        margin-top: 20px;
+    }
+
+    &__text {
+
+        .heading-1 {
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 72px;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        
+        &__color-black {
+            color: #101E5A;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 // import CallToAction from "../components/Landing/CallToAction";
-// import Description from "../components/Landing/Description";
+import Description from "../components/Landing/Description";
+import Integration from "../components/Landing/Integration"
 // import Footer from "../components/Landing/Footer";
 import Header from "../components/Landing/Header";
 import Navbar from "../components/Landing/Navbar"
@@ -21,6 +22,8 @@ function Landing() {
       <div className="">
         <Header />
       </div>
+      <Description />
+      <Integration />
       <Video />
       <Interest />
     </>
