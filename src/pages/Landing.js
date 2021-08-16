@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 // import CallToAction from "../components/Landing/CallToAction";
-// import Description from "../components/Landing/Description";
+import Description from "../components/Landing/Description";
+import Integration from "../components/Landing/Integration"
 // import Footer from "../components/Landing/Footer";
 import Header from "../components/Landing/Header";
 import Navbar from "../components/Landing/Navbar"
@@ -27,8 +28,10 @@ function Landing() {
       {/* <Navbar />
       <div className="">
         <Header />
-      </div> */}
-      {/* <Video /> */}
+      </div>
+      <Description />
+      <Integration />
+      <Video />
       <Interest />
       {/* <Inkubator />\
       <div className="container" style={{backgroundColor:"black", padding:"20px", color: "white"}}>
