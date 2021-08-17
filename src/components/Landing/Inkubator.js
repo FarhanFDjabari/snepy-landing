@@ -28,7 +28,7 @@ const TitleText = styled.h1`
 
 function Inkubator() {
 
-  let listImage = [BIIWUB, PIF, Compfest, FounderPlus, Kewirus]
+  let listImage = [PIF, Kewirus, Compfest, FounderPlus, BIIWUB]
 
   return(
     <>
