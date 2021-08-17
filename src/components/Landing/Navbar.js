@@ -39,7 +39,7 @@ function Navbar() {
                                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-end">
                                     <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle navbar__item_text" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Sneppy
+                                            Wujudkan Snepy
                                         </a>
                                         <ul className="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
                                             <li>
