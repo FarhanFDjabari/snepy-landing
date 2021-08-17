@@ -18,18 +18,7 @@ function Navbar() {
                         </button>
                         <div className="collapse navbar-collapse ms-5" id="navbarText">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item mx-2">
-                                    <Link className="nav-link navbar__item_text" aria-current="page" to="/">Beranda</Link>
-                                </li>
-                                <li className="nav-item mx-2">
-                                    <Link className="nav-link navbar__item_text" aria-current="page" to="/">Tentang Kami</Link>
-                                </li>
-                                <li className="nav-item mx-2">
-                                    <Link className="nav-link navbar__item_text" aria-current="page" to="/">FAQ</Link>
-                                </li>
-                                <li className="nav-item mx-2">
-                                    <Link className="nav-link navbar__item_text" aria-current="page" to="/">Kontak Kami</Link>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -42,6 +31,18 @@ function Navbar() {
                                             Pre-Order Sekarang
                                         </a>
                                         <ul className="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                        <li className="nav-item mx-2">
+                                        <Link className="nav-link navbar__item_text" aria-current="page" to="/">Beranda</Link>
+                                            </li>
+                                            <li className="nav-item mx-2">
+                                                <Link className="nav-link navbar__item_text" aria-current="page" to="/">Tentang Kami</Link>
+                                            </li>
+                                            <li className="nav-item mx-2">
+                                                <Link className="nav-link navbar__item_text" aria-current="page" to="/">FAQ</Link>
+                                            </li>
+                                            <li className="nav-item mx-2">
+                                                <Link className="nav-link navbar__item_text" aria-current="page" to="/">Kontak Kami</Link>
+                                            </li>
                                             <li>
                                                 <Link className="dropdown-item" to="/company">Company</Link>
                                             </li>
