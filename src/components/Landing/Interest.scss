@@ -144,3 +144,52 @@
 .input-email:focus {
   outline: none;
 }
+
+
+
+
+
+.bar-container {
+
+  margin-top: 64px;
+  margin-bottom: 50px;
+
+  &__bar {
+      height: 3rem !important;
+      border-radius: 50px !important;
+  }
+
+  &__download-section {
+      margin-left: auto;
+  }
+
+  &__text-description {
+      font-size: 2rem;
+      font-weight: 400;
+      text-align: right;
+
+  }
+
+  .color-blue {
+      background-color: #5D80B6;
+  }
+
+  .heading-1 {
+      font-weight: 510;
+      line-height: 30px;
+  }
+
+  .progress-bar-text {
+      font-size: 1.8rem;
+  }
+
+  .input-email {
+      box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1px 1px 2px rgba(174, 174, 192, 0.2);
+  }
+}
+
+.form-input-email {
+  outline: none;
+  border: none;
+  background: none;
+}

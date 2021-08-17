@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import "./Interest.scss";
 import { Row, Col } from "react-bootstrap";
 import styled from "styled-components";
@@ -29,7 +30,7 @@ const DescriptionText = styled.h3`
 
 const KotakProgress = styled.div`
   width: 100%;
-  height: 20px;
+  // height: 20px;
   border: 2px solid white;
   border-radius: 50px;
   padding: 0;
@@ -38,7 +39,7 @@ const KotakProgress = styled.div`
 
 const BesarProgress = styled.div`
   height: 100%;
-  width: 40%;
+  width: ${props => props.people / props.max * 100}%;
   background-color: white;
   border-radius: 50px;
 `;
@@ -54,14 +55,23 @@ const BesarProgressText = styled.p`
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
-  /* identical to box height */
+  white-space: pre;
+  text-overflow: clip; 
+  overflow: hidden;
+  color: #101E5A;
+`
 
-  /* Snepy!/Secondary */
-
-  color: #101e5a;
-`;
 
 function Interest() {
+
+  const [countPeople, setCountPeople] = useState(0)
+  const [maxPeople, setMaxPeople] = useState(0)
+
+  useEffect(() => {
+    setCountPeople(20)
+    setMaxPeople(50)
+  }, [])
+
   return (
     <>
       <div className="interest-wrapper">
@@ -80,17 +90,10 @@ function Interest() {
                 </div>
                 <div className="interest-form-email">
                   <KotakProgress className="mb-4">
-                    <BesarProgress>
-                      <BesarProgressText>4 Orang</BesarProgressText>
+                    <BesarProgress people={countPeople} max={maxPeople}>
+                      <BesarProgressText>{countPeople} Orang</BesarProgressText>
                     </BesarProgress>
                   </KotakProgress>
-                  <DescriptionText className="mb-4">
-                    Segera!
-                    <a href="#">
-                      {" "}
-                      Daftar email anda untuk masuk daftar antrian.
-                    </a>
-                  </DescriptionText>
                   <div className="input-email">
                     <button
                       className="btn-input-email"

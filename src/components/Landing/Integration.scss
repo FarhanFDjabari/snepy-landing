@@ -1,4 +1,9 @@
 .integration-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 40px;
 
     .row-integration {
@@ -26,4 +31,13 @@
             color: #101E5A;
         }
     }
+
+    @media (max-width: 768px) {
+        .responsive{
+            &__phone-image {
+                width: 460px;
+            }
+        }
+    }
+
 }
