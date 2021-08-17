@@ -4,19 +4,23 @@ import styled from "styled-components";
 import PhoneImg from '../../asset/img/Phone.png'
 
 const TitleText = styled.h1`
-  font-size: 3.5rem;
-  text-align: left;
-  margin-bottom: 4rem;
-  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  color: #101E5A;
+
   @media only screen and (max-width: 992px) {
     text-align: center;
   }
 `;
 
 const DescriptionText = styled.h3`
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: justify;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
 
   @media only screen and (max-width: 992px) {
     text-align: center;
@@ -45,18 +49,28 @@ const BesarProgressText = styled.p`
   display: flex;
   align-items: center;
   justify-content: center;
-  // border: 2px solid black;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+
+  /* Snepy!/Secondary */
+
+  color: #101E5A;
 `
 
 function Interest() {
   return (
     <>
-      <div class="interest-wrapper">
-        <div class="interest-content">
+      <div className="interest-wrapper">
+        <div className="interest-content">
           <div className="container-fluid">
             <Row className="bg-mobile px-5">
               <Col className="interest-left">
-                <div class="detail">
+                <div className="detail mb-5">
                   <TitleText>Tertarik dengan SNEPY?!</TitleText>
                   <DescriptionText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -66,12 +80,12 @@ function Interest() {
                   </DescriptionText>
                 </div>
                 <div className="interest-form-email">
-                  <KotakProgress>
+                  <KotakProgress className="mb-4">
                     <BesarProgress>
                       <BesarProgressText>4 Orang</BesarProgressText>
                     </BesarProgress>
                   </KotakProgress>
-                  <p>Segera!<a href="#"> Daftar email anda untuk masuk daftar antrian.</a></p>
+                  <DescriptionText className="mb-4">Segera!<a href="#"> Daftar email anda untuk masuk daftar antrian.</a></DescriptionText>
                   <div className="input-email">
                     {/* <input className="form-input-email" type="text" placeholder="Email Anda" /> */}
                     <button className="btn-input-email">Daftarkan Dirimu!</button>
@@ -86,8 +100,8 @@ function Interest() {
             </Row>
           </div>
         </div>
-        <div class="interest-background">
-          <div class="blue-line d-none d-lg-block"></div>
+        <div className="interest-background">
+          <div className="blue-line d-none d-lg-block"></div>
         </div>
       </div>
     </>

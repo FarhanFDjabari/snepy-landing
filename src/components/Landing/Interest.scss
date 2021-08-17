@@ -5,7 +5,8 @@
 
 @media only screen and (min-width: 993px) {
   .interest-wrapper {
-    height: 840px;
+    // height: 740px;
+    margin: 100px 0;
   }
 }
 
@@ -69,7 +70,7 @@
 }
 
 .blue-line {
-  height: 432px;
+  height: 460px;
   width: 100%;
   background-color: #cbe2ef;
 }
@@ -128,6 +129,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 50px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #101E5A;
 }
 
 .btn-input-email:active {

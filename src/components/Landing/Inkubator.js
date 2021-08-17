@@ -5,15 +5,25 @@ import Compfest from '../../asset/img/Compfest.png'
 import FounderPlus from '../../asset/img/Founderplus.png'
 import Kewirus from '../../asset/img/Kewirus.png'
 import styled from 'styled-components'
+import { Row, Col } from 'react-bootstrap'
 
 const ImageBox = styled.div`
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   background-image: url(${props => props.image});
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   margin: 5px 20px;
+`
+
+const TitleText = styled.h1`
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: left;
+  color: #101E5A;
 `
 
 function Inkubator() {
@@ -23,12 +33,17 @@ function Inkubator() {
   return(
     <>
       <div className="container-fluid">
-        <h1>Inkubator Kami</h1>
-        <div className="inkubator-list-box">
-          {listImage.map(image => (
-            <ImageBox image={image} />
-          ))}
-        </div>
+        <Row className="px-5">
+          <Col>
+            <TitleText>Inkubator Kami</TitleText>
+            <div className="inkubator-list-box">
+              {listImage.map(image => (
+                <ImageBox image={image} />
+              ))}
+            </div>
+          </Col>
+        </Row>
+        
       </div>
     </>
   )

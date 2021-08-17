@@ -1,6 +1,38 @@
 import { useState } from 'react'
 import './Video.scss'
 import MockupBantalTwo from '../../asset/img/Mockup_Bantal_2.jpg'
+import PlayIcon from '../../asset/img/play_icon.png'
+import styled from 'styled-components'
+
+const PlayButton = styled.div`
+  width: 560px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center center;
+`
+
+const TitleVideo = styled.h1`
+  color: white;
+  text-align: center;
+  font-family: Poppins;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 36px;
+`
+
+const DescriptionVideo = styled.p`
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FAF9FE;
+`
 
 function VideoTest() {
   const [video, setVideo] = useState(null)
@@ -28,10 +60,16 @@ function VideoTest() {
     <div className="wrapper">
       <div className="video-wrapper">
         <video className="video" poster={MockupBantalTwo} ref={(video) => setVideo(video)}>
-          <source src="http://e14aaeb709f7cde1ae68-a1d0a134a31b545b257b15f8a8ba5726.r70.cf3.rackcdn.com/projects/31432/1427815464209-bf74131a7528d0ea5ce8c0710f530bb5/1280x720.mp4" type="video/mp4" />
+          {/* <source src={SneepyVideo} type="video/mp4" /> */}
+          <source src="https://bit.ly/3mcWXWW" type="video/mp4" />
         </video>
         <div className={playPauseClass} onClick={() => setVisibility()}>
-          <div className="playPauseButton"></div>
+          {/* <div className="playPauseButton"></div> */}
+          <PlayButton>
+            <img src={PlayIcon} />
+            <TitleVideo>Masih penasaran dengan cara kerja Snepy?!</TitleVideo>
+            <DescriptionVideo>Tonton video untuk mempelajari lebih lanjut</DescriptionVideo>
+          </PlayButton>
         </div>
       </div>
     </div>

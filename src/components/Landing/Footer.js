@@ -8,7 +8,7 @@ function Footer() {
       <footer class="footer-clean">
         <div class="container-fluid">
           <div class="row justify-content-center">
-            <div class="col-sm-4 col-md-3 item d-flex justify-content-center">
+            <div class="col-sm-4 col-md-3 item d-flex justify-content-center px-5">
               <div>
                 <h3 style={{ opacity: "0" }}>S</h3>
                 <ul>
@@ -21,7 +21,7 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div class="col-sm-4 col-md-3 item d-flex justify-content-center">
+            <div class="col-sm-4 col-md-3 item d-flex justify-content-center px-5">
               <div>
                 <h3>Halaman Kami</h3>
                 <ul>
@@ -32,13 +32,13 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div class="col-sm-4 col-md-3 item d-flex justify-content-center">
+            <div class="col-sm-4 col-md-3 item d-flex justify-content-center px-5">
               <div>
                 <h3>Wujudkan Snepy!</h3>
                 <img src={KitabisaFooter} />
               </div>
             </div>
-            <div class="col-sm-4 col-md-3 item d-flex justify-content-center">
+            <div class="col-sm-4 col-md-3 item d-flex justify-content-center px-5">
               <div>
                 <div>
                   <h3>Hubungi Kami</h3>

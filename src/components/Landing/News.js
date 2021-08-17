@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { Row, Col } from 'react-bootstrap'
 import './News.scss'
 
 export default class Responsive extends Component {
@@ -39,55 +40,75 @@ export default class Responsive extends Component {
       ]
     };
     return (
-      <>
-        <h1>Berita Terbaru</h1>
+      <div className="news-outer-box">
+        <Row className="container-fluid">
+          <Col className="px-5">
+            <h1 className="news-box-title">Berita Terbaru</h1>
+          </Col>
+        </Row>
         <div className="news-container p-5">
           <div className="container-fluid">
             <Slider {...settings}>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="box">
-                  Nofath
+                <div className="news-box">
+                  <div className="news-title">
+                    Title
+                  </div>
                 </div>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="box">
-                  Nofath
+                <div className="news-box">
+                  <div className="news-title">
+                    Title
+                  </div>
                 </div>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="box">
-                  Nofath
+                <div className="news-box">
+                  <div className="news-title">
+                    Title
+                  </div>
                 </div>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="box">
-                  Nofath
+                <div className="news-box">
+                  <div className="news-title">
+                    Title
+                  </div>
                 </div>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="box">
-                  Nofath
+                <div className="news-box">
+                  <div className="news-title">
+                    Title
+                  </div>
                 </div>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="box">
-                  Nofath
+                <div className="news-box">
+                  <div className="news-title">
+                    Title
+                  </div>
                 </div>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="box">
-                  Nofath
+                <div className="news-box">
+                  <div className="news-title">
+                    Title
+                  </div>
                 </div>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="box">
-                  Nofath
+                <div className="news-box">
+                  <div className="news-title">
+                    Title
+                  </div>
                 </div>
               </div>
             </Slider>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }
