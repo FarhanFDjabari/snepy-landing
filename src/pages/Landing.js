@@ -25,7 +25,7 @@ function Landing() {
 
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <div className="">
         <Header />
       </div>
@@ -33,13 +33,13 @@ function Landing() {
       <Integration />
       <Video />
       <Interest />
-      {/* <Inkubator />\
+       <Inkubator />\
       <div className="container" style={{backgroundColor:"black", padding:"20px", color: "white"}}>
         <News />
       </div>
       <h1>Nofath</h1>
       <h1>Nofath</h1>
-      <h1>Nofath</h1> */}
+      <h1>Nofath</h1>
     </>
   );
 }
