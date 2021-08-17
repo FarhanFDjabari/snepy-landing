@@ -26,4 +26,10 @@
         }
 
     }
+
+    @media (max-width:768px) {
+        &__text {
+            padding: 0;
+        }
+    }
 }
