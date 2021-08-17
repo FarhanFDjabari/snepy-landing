@@ -1,9 +1,26 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import { Row, Col } from 'react-bootstrap'
+import styled from 'styled-components'
+import NewsThumbnail from '../../asset/img/news-thumbnail.jfif'
 import './News.scss'
 
+
+const NewsBox = styled.div`
+  width: 346px;
+  height: 195px;
+  background: url(${props => props.image});
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+`
 export default class Responsive extends Component {
+
+  
+
+
   render() {
     var settings = {
       dots: true,
@@ -50,60 +67,60 @@ export default class Responsive extends Component {
           <div className="container-fluid">
             <Slider {...settings}>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="news-box">
+                <NewsBox image={NewsThumbnail}>
                   <div className="news-title">
                     Title
                   </div>
-                </div>
+                </NewsBox>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="news-box">
+                <NewsBox image={NewsThumbnail}>
                   <div className="news-title">
                     Title
                   </div>
-                </div>
+                </NewsBox>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="news-box">
+                <NewsBox image={NewsThumbnail}>
                   <div className="news-title">
                     Title
                   </div>
-                </div>
+                </NewsBox>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="news-box">
+                <NewsBox image={NewsThumbnail}>
                   <div className="news-title">
                     Title
                   </div>
-                </div>
+                </NewsBox>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="news-box">
+                <NewsBox image={NewsThumbnail}>
                   <div className="news-title">
                     Title
                   </div>
-                </div>
+                </NewsBox>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="news-box">
+                <NewsBox image={NewsThumbnail}>
                   <div className="news-title">
                     Title
                   </div>
-                </div>
+                </NewsBox>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="news-box">
+                <NewsBox image={NewsThumbnail}>
                   <div className="news-title">
                     Title
                   </div>
-                </div>
+                </NewsBox>
               </div>
               <div className="px-3 d-flex justify-content-center align-items-center">
-                <div className="news-box">
+                <NewsBox image={NewsThumbnail}>
                   <div className="news-title">
                     Title
                   </div>
-                </div>
+                </NewsBox>
               </div>
             </Slider>
           </div>
