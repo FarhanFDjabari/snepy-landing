@@ -30,7 +30,7 @@ const DescriptionText = styled.h3`
 
 const KotakProgress = styled.div`
   width: 100%;
-  height: 20px;
+  // height: 20px;
   border: 2px solid white;
   border-radius: 50px;
   padding: 0;
@@ -55,11 +55,9 @@ const BesarProgressText = styled.p`
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
-  /* identical to box height */
-
-
-  /* Snepy!/Secondary */
-
+  white-space: pre;
+  text-overflow: clip; 
+  overflow: hidden;
   color: #101E5A;
 `
 
