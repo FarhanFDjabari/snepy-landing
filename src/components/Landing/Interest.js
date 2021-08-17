@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react'
 import "./Interest.scss";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import styled from "styled-components";
-import PhoneImg from '../../asset/img/Phone.png'
+import PhoneImg from "../../asset/img/Phone.png";
 
 const TitleText = styled.h1`
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
   line-height: 72px;
-  color: #101E5A;
+  color: #101e5a;
 
   @media only screen and (max-width: 992px) {
     text-align: center;
@@ -42,7 +42,7 @@ const BesarProgress = styled.div`
   width: ${props => props.people / props.max * 100}%;
   background-color: white;
   border-radius: 50px;
-`
+`;
 
 const BesarProgressText = styled.p`
   height: 100%;
@@ -60,6 +60,7 @@ const BesarProgressText = styled.p`
   overflow: hidden;
   color: #101E5A;
 `
+
 
 function Interest() {
 
@@ -94,13 +95,23 @@ function Interest() {
                     </BesarProgress>
                   </KotakProgress>
                   <div className="input-email">
-                    <button className="btn-input-email" onClick={()=> window.open("https://forms.gle/XcdB1xeLUW9ZZwNo7", "_blank")}>Daftarkan Dirimu!</button>
+                    <button
+                      className="btn-input-email"
+                      onClick={() =>
+                        window.open(
+                          "https://forms.gle/XcdB1xeLUW9ZZwNo7",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Daftarkan Dirimu!
+                    </button>
                   </div>
                 </div>
               </Col>
               <Col className="interest-right">
                 <div>
-                  <img src={PhoneImg} />
+                  <img src={PhoneImg} alt="phone_image" />
                 </div>
               </Col>
             </Row>
