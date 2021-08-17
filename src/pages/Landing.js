@@ -8,7 +8,6 @@ import Navbar from "../components/Landing/Navbar"
 // import Video from '../components/Landing/Video'
 import Interest from '../components/Landing/Interest'
 import Inkubator from '../components/Landing/Inkubator'
-import News from '../components/Landing/News'
 import Video from '../components/Landing/Video'
 import Footer from '../components/Landing/Footer'
 import { firebaseAnalytics } from "../firebaseConfig";
@@ -33,7 +32,6 @@ function Landing() {
       <Video />
       <Interest />
       <Inkubator />
-      <News />
       <Footer />
     </>
   );

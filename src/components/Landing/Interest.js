@@ -85,7 +85,6 @@ function Interest() {
                       <BesarProgressText>4 Orang</BesarProgressText>
                     </BesarProgress>
                   </KotakProgress>
-                  <DescriptionText className="mb-4">Segera!<a href="#"> Daftar email anda untuk masuk daftar antrian.</a></DescriptionText>
                   <div className="input-email">
                     <button className="btn-input-email" onClick={()=> window.open("https://forms.gle/XcdB1xeLUW9ZZwNo7", "_blank")}>Daftarkan Dirimu!</button>
                   </div>
