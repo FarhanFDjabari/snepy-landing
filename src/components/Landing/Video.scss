@@ -1,0 +1,56 @@
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+.video-wrapper{
+  display: table;
+  height: auto;
+  position: relative;
+  height: 100%;
+}
+
+.playpause {
+  background: rgba($color: #000000, $alpha: 0.25);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0px;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// .playPauseButton {
+//   background: url("http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png");
+//   width: 50%;
+//   height: 50%;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-position: center center;
+// }
+
+.show-visibility {
+  opacity: 1;
+}
+
+.remove-visibility { 
+  opacity: 0;
+}
