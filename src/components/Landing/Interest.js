@@ -67,8 +67,8 @@ function Interest() {
   const [maxPeople, setMaxPeople] = useState(0)
 
   useEffect(() => {
-    setCountPeople(4)
-    setMaxPeople(25)
+    setCountPeople(20)
+    setMaxPeople(50)
   }, [])
 
   return (
