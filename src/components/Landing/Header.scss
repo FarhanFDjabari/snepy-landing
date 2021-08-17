@@ -48,7 +48,11 @@
 
         &__btn-buy {
             font-size: 14px;
-            line-height: 21px;            
+            line-height: 21px;
+            color: white;
+        }
+        &__btn-buy:hover {
+            color: white;
         }
 
     }
