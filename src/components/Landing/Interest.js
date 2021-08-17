@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import "./Interest.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
@@ -38,7 +39,7 @@ const KotakProgress = styled.div`
 
 const BesarProgress = styled.div`
   height: 100%;
-  width: 40%;
+  width: ${props => props.people / props.max * 100}%;
   background-color: white;
   border-radius: 50px;
 `
@@ -49,8 +50,6 @@ const BesarProgressText = styled.p`
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-=======
 
   font-style: normal;
   font-weight: normal;
@@ -62,10 +61,18 @@ const BesarProgressText = styled.p`
   /* Snepy!/Secondary */
 
   color: #101E5A;
->>>>>>> 25796022e6c930e229b83825fcb85ba337cbb1d2
 `
 
 function Interest() {
+
+  const [countPeople, setCountPeople] = useState(0)
+  const [maxPeople, setMaxPeople] = useState(0)
+
+  useEffect(() => {
+    setCountPeople(4)
+    setMaxPeople(25)
+  }, [])
+
   return (
     <>
       <div className="interest-wrapper">
@@ -84,8 +91,8 @@ function Interest() {
                 </div>
                 <div className="interest-form-email">
                   <KotakProgress className="mb-4">
-                    <BesarProgress>
-                      <BesarProgressText>4 Orang</BesarProgressText>
+                    <BesarProgress people={countPeople} max={maxPeople}>
+                      <BesarProgressText>{countPeople} Orang</BesarProgressText>
                     </BesarProgress>
                   </KotakProgress>
                   <div className="input-email">

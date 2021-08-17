@@ -1,7 +1,17 @@
 import "./Bar.scss"
+import { useState, useEffect } from 'react'
 
 
 function Bar() {
+    const [countPeople, setCountPeople] = useState(0)
+    const [maxPeople, setMaxPeople] = useState(0)
+
+    useEffect(() => {
+        setCountPeople(5)
+        setMaxPeople(25)
+    }, [])
+
+
     return (
         <>
             <div className="container d-flex flex-column bar-container">
@@ -12,8 +22,8 @@ function Bar() {
                 {/* Flex item 2 */}
                 <div className="flex-item mb-4">
                     <div className="progress bar-container__bar">
-                        <div className="progress-bar progress-bar-text color-blue" style={{ width: "50%" }}>
-                            5 Orang
+                        <div className="progress-bar progress-bar-text color-blue" style={{ width: `${countPeople / maxPeople * 100}%` }}>
+                            {countPeople} Orang
                         </div>
                     </div>
                 </div>
