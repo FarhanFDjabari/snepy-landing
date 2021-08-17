@@ -49,6 +49,8 @@ const BesarProgressText = styled.p`
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
+=======
 
   font-style: normal;
   font-weight: normal;
@@ -60,6 +62,7 @@ const BesarProgressText = styled.p`
   /* Snepy!/Secondary */
 
   color: #101E5A;
+>>>>>>> 25796022e6c930e229b83825fcb85ba337cbb1d2
 `
 
 function Interest() {

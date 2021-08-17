@@ -26,4 +26,10 @@
             color: #101E5A;
         }
     }
+
+    .responsive{
+        &__phone-image {
+            width: 460px;
+        }
+    }
 }
