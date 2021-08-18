@@ -32,7 +32,7 @@ function Navbar() {
             <div className="collapse navbar-collapse ms-auto" id="navbarText">
               <span className="navbar-text">
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-end">
-                  <li className="nav-item mx-1">
+                  <li className="nav-item mx-3">
                     <Link
                       className="nav-link navbar__item_text"
                       aria-current="page"
@@ -41,7 +41,7 @@ function Navbar() {
                       Beranda
                     </Link>
                   </li>
-                  <li className="nav-item mx-1">
+                  <li className="nav-item mx-3">
                     <Link
                       className="nav-link navbar__item_text"
                       aria-current="page"
@@ -50,7 +50,7 @@ function Navbar() {
                       Tentang Kami
                     </Link>
                   </li>
-                  <li className="nav-item mx-1">
+                  <li className="nav-item mx-3">
                     <Link
                       className="nav-link navbar__item_text"
                       aria-current="page"
@@ -59,7 +59,7 @@ function Navbar() {
                       FAQ
                     </Link>
                   </li>
-                  <li className="nav-item mx-1">
+                  <li className="nav-item mx-3">
                     <Link
                       className="nav-link navbar__item_text"
                       aria-current="page"
@@ -68,7 +68,7 @@ function Navbar() {
                       Kontak Kami
                     </Link>
                   </li>
-                  <li className="nav-item mx-1">
+                  <li className="nav-item mx-3">
                     <Link
                       className="nav-link navbar__item_text btn-buy-navbar"
                       aria-current="page"
@@ -83,7 +83,7 @@ function Navbar() {
                       Miliki SNEPY! mu
                     </Link>
                   </li>
-                  <li className="nav-item mx-1 d-flex justify-content-center">
+                  <li className="nav-item mx-3 d-flex justify-content-center">
                     <div className="nav-link navbar__item_text">ID</div>
                     <input type="checkbox" id="toggle" className="d-none" />
                     <label for="toggle"></label>
