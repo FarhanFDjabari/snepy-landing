@@ -22,7 +22,8 @@ function Header() {
           </div>
           <a
             className="btn-buy learn-more jumbotron__text__color-white jumbotron__text__btn-buy"
-            href="https://google.com"
+            // href="#coba-ngetes"
+            onClick={() => {window.scrollTo({ top: "700", behavior: "smooth"})}}
           >
             Pelajari lebih
           </a>
