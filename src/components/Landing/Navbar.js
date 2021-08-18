@@ -70,7 +70,7 @@ function Navbar() {
                   </li>
                   <li className="nav-item mx-1">
                     <Link
-                      className="nav-link navbar__item_text"
+                      className="nav-link navbar__item_text btn-buy-navbar"
                       aria-current="page"
                       to="/"
                       onClick={() =>

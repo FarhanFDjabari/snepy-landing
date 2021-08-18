@@ -63,3 +63,24 @@
     margin-left: 1em !important;
   }
 }
+
+.btn-buy-navbar {
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5d80b6;
+  border-radius: 24px;
+  padding: 5px 20px !important;
+  // width: 170px;
+  // height: 45px;
+
+  &.learn-more {
+    background-color: transparent;
+    font-weight: 500;
+  }
+}
+
+.btn-buy-navbar:hover {
+  cursor: pointer;
+}
