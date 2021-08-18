@@ -18,7 +18,7 @@ function Header() {
               window.open("https://forms.gle/XcdB1xeLUW9ZZwNo7", "_blank")
             }
           >
-            Pre-Order Sekarang
+            Miliki SNEPY! mu
           </div>
           <a
             className="btn-buy learn-more jumbotron__text__color-white jumbotron__text__btn-buy"
