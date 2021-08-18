@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 import "./Interest.scss";
 import { Row, Col } from "react-bootstrap";
 import styled from "styled-components";
@@ -39,7 +39,7 @@ const KotakProgress = styled.div`
 
 const BesarProgress = styled.div`
   height: 100%;
-  width: ${props => props.people / props.max * 100}%;
+  width: ${(props) => (props.people / props.max) * 100}%;
   background-color: white;
   border-radius: 50px;
 `;
@@ -56,21 +56,19 @@ const BesarProgressText = styled.p`
   font-size: 12px;
   line-height: 18px;
   white-space: pre;
-  text-overflow: clip; 
+  text-overflow: clip;
   overflow: hidden;
-  color: #101E5A;
-`
-
+  color: #101e5a;
+`;
 
 function Interest() {
-
-  const [countPeople, setCountPeople] = useState(0)
-  const [maxPeople, setMaxPeople] = useState(0)
+  const [countPeople, setCountPeople] = useState(0);
+  const [maxPeople, setMaxPeople] = useState(0);
 
   useEffect(() => {
-    setCountPeople(20)
-    setMaxPeople(50)
-  }, [])
+    setCountPeople(20);
+    setMaxPeople(50);
+  }, []);
 
   return (
     <>
@@ -80,7 +78,7 @@ function Interest() {
             <Row className="bg-mobile px-5">
               <Col className="interest-left">
                 <div className="detail mb-5">
-                  <TitleText>Tertarik dengan SNEPY?!</TitleText>
+                  <TitleText>Tertarik dengan SNEPY! ?</TitleText>
                   <DescriptionText>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Malesuada magna gravida sapien laoreet tincidunt orci quis.
