@@ -75,7 +75,7 @@ function Navbar() {
                       to="/"
                       onClick={() =>
                         window.open(
-                          "https://forms.gle/XcdB1xeLUW9ZZwNo7",
+                          "https://forms.gle/nN5SaojRohgv5tfw6",
                           "_blank"
                         )
                       }

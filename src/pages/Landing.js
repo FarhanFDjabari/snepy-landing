@@ -34,7 +34,7 @@ function Landing() {
       <Integration />
       <Video />
       <Interest />
-      <Inkubator />
+      {/* <Inkubator /> */}
       <Footer />
       <svg onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }) }} className="icon-to-top" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M35 0C15.6719 0 0 15.6719 0 35C0 54.3281 15.6719 70 35 70C54.3281 70 70 54.3281 70 35C70 15.6719 54.3281 0 35 0ZM35 64.0625C18.9531 64.0625 5.9375 51.0469 5.9375 35C5.9375 18.9531 18.9531 5.9375 35 5.9375C51.0469 5.9375 64.0625 18.9531 64.0625 35C64.0625 51.0469 51.0469 64.0625 35 64.0625Z" fill="#B7B7BA" fill-opacity="0.8" />

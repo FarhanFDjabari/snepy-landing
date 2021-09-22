@@ -15,7 +15,7 @@ function Header() {
           <div
             className="btn-buy jumbotron__text__btn-buy jumbotron__text__color-white me-4"
             onClick={() =>
-              window.open("https://forms.gle/XcdB1xeLUW9ZZwNo7", "_blank")
+              window.open("https://forms.gle/nN5SaojRohgv5tfw6", "_blank")
             }
           >
             Miliki SNEPY! mu

@@ -80,10 +80,7 @@ function Interest() {
                 <div className="detail mb-5">
                   <TitleText>Tertarik dengan SNEPY! ?</TitleText>
                   <DescriptionText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Malesuada magna gravida sapien laoreet tincidunt orci quis.
-                    Malesuada eget egestas volutpat a feugiat tellus est, lacus,
-                    tempus.
+                    Pesan sekarang dengan cukup menekan tombol dibawah ini.
                   </DescriptionText>
                 </div>
                 <div className="interest-form-email">
@@ -97,7 +94,7 @@ function Interest() {
                       className="btn-input-email"
                       onClick={() =>
                         window.open(
-                          "https://forms.gle/XcdB1xeLUW9ZZwNo7",
+                          "https://forms.gle/nN5SaojRohgv5tfw6",
                           "_blank"
                         )
                       }

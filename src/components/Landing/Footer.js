@@ -51,7 +51,7 @@ function Footer() {
             <div className="col-sm-4 col-md-3 item d-flex justify-content-center px-5">
               <div>
                 <h3>Ingin memiliki SNEPY! ?</h3>
-                <button className="btn-redirect-footer" onClick={() => window.open("https://forms.gle/XcdB1xeLUW9ZZwNo7", "_blank")}>
+                <button className="btn-redirect-footer" onClick={() => window.open("https://forms.gle/nN5SaojRohgv5tfw6", "_blank")}>
                   Daftarkan Dirimu!
                 </button>
               </div>
