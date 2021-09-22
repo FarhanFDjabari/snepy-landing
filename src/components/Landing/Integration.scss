@@ -1,0 +1,43 @@
+.integration-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+
+    .row-integration {
+        margin-top: 200px;
+    }
+
+    .container-image {
+        margin-top: 20px;
+    }
+
+    &__text {
+
+        .heading-1 {
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 72px;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        
+        &__color-black {
+            color: #101E5A;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .responsive{
+            &__phone-image {
+                width: 460px;
+            }
+        }
+    }
+
+}
